@@ -1,71 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-  /**   flag = false;
-    const btns = document.querySelectorAll(".navBtn");
-    for (let i = 0; i < btns.length; i++) {
-        btns[i].addEventListener('mouseenter', (e) => {
-            document.getElementById("fixedMenu").style.backdropFilter="blur(10px)"
-            e.target.classList.add('hovered')
-            animText(cheakerText(e.target.id), e.target)
-            flag = true;
-        }, false);
-    }
-
-    for (let i = 0; i < btns.length; i++) {
-        btns[i].addEventListener('mouseleave', (e) =>{
-            document.getElementById("fixedMenu").style.backdropFilter="none"
-            document.getElementById("fixedText").textContent = "";
-            e.target.classList.remove('hovered')
-            flag = false;
-        }, false);
-    }
-
-
-    function cheakerText(elem) {
-        if (elem == "main") {
-            return "главное меню"
-        } else if (elem == "shop") {
-            console.log("shop")
-            return "магазин"
-        } else if (elem == "place") {
-            console.log("place")
-            return "пространство"
-        } else if (elem == "book") {
-            console.log("book")
-            return "книга"
-        }
-    }
-
-    function animText(a, btn) {
-        a = a.split("");
-        btn.addEventListener("mouseleave", (e)=> {
-            return
-        })
-   // a.forEach((el, i) => setTimeout(() => {
-    //    document.getElementById("fixedText").textContent += a[i]
-   //     btn.addEventListener("mouseleave", (e) => {
-  //          removeText(a, e)
-  //      })
-  //  }, 100 * (i + 1)));
-      a.some((el, i) => {
-        let bbb = setTimeout(() => {
-        document.getElementById("fixedText").textContent += a[i]
-        btn.addEventListener("mouseleave", (e) => {
-            clearTimeout(bbb)
-            removeText(a, e)
-            return false
-        })
-        return true
-
-      }, 100 * (i + 1) )})
-
-    }
-
-    function removeText(a, e) {
-        //a = a.split("");
-         a.forEach((el, i) => setTimeout(() =>document.getElementById("fixedText").textContent == a.slice(1, i), 100 * (i + 1)));
-
-    }
-         */
 
     let flagg = false;
 
@@ -134,25 +67,6 @@ document.addEventListener("DOMContentLoaded", function() {
         })
             
         
-
-    
-
-
-
-   // const shelfs = document.getElementById("shelfs")
- //   shelfs.addEventListener("mousemove", (e) => {
- //       console.log(e.target)
-//
-  //  })
-
-//window.addEventListener("scroll", (e) => {
- //   let scrollPos = scrollY;
- //   if (scrollPos >= 500) {
- //       document.getElementById("text").style.display="none"
- //   } else {
- //       document.getElementById("text").style.display="none"
-  //  }
-//})
 flag = false;
     const btns = document.querySelectorAll(".navBtn");
     for (let i = 0; i < btns.length; i++) {
