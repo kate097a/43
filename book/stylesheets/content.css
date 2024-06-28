@@ -7,16 +7,11 @@ html, body{
     
 }
 
-@font-face {
-  font-family: "CarlaSansLight";
-  src: url("../fonts/CarlaSansLight.ttf") format("truetype");
-  font-style: Light;
-  font-weight: Light;
-}
-
 p{
     font-family: 'CarlaSansLight';
 }
+
+
 .cursorDot {
     width: 3vw;
     height: 3vw;
@@ -46,6 +41,20 @@ p{
 }
 
 
+.noise {
+    position: absolute;
+    height:100vh; 
+    width: 100%;
+    background-image: url("../img/noise.gif");
+    z-index: 9999999999999999999999;
+    opacity: 0.1;
+    backdrop-filter: invert(70%);
+    pointer-events: none;
+    top: 0;
+}
+
+
+
 .fixedMenu {
     transition: all 1s;
     width: 100%;
@@ -64,6 +73,7 @@ p{
     text-align: center;
     z-index: 32222323232;
     color: rgb(0, 0, 0);
+    font-family: "Inter";
 }
 
 .navBtn {
@@ -111,16 +121,9 @@ p{
     overflow: hidden;
 }
 
-
-
 #main {
     left: 20vw;
     top: 8vw
-}
-
-#shop {
-    left: 73vw;
-    top: 13vw
 }
 
 #place { 
@@ -134,8 +137,8 @@ p{
 }
 
 #posters { 
-    left: 25vw;
-    top: 22vw
+    left: 75vw;
+    top: 10vw
 }
 
 
@@ -154,7 +157,6 @@ header {
     width: 90vw;
     height: 90vh;
     position: absolute;
-    border: 0.1vw #000000 solid;
     top: 2vw;
     left: 5vw;
     z-index: 4;
@@ -196,4 +198,5 @@ header {
     background-image: url("../img/book/4.png");
     filter: brightness(0.6);
   }
+  
   

@@ -1,0 +1,49 @@
+@media all and (orientation: portrait){
+  body{
+    width: 100%;
+    overflow: hidden;
+  }
+  .rotatee{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+  }
+  .linesContainer{
+      display: none;
+  }
+
+  .buttons {
+    display: none;
+  }
+
+  .rotate {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .rotateImg {
+    width: 35vw;
+    height: 35vw;
+    position: absolute;              
+    top: 43%; 
+    left: 32%;               
+    transform: translate(0, -50%);
+    animation: rot 3s linear infinite;
+  }
+
+  @keyframes rot {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-360deg);}
+  }
+
+
+}
+
+@media all and (orientation: landscape){
+
+  .rotate {
+    display: none;
+  }
+
+}

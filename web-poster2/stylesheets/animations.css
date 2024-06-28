@@ -1,0 +1,668 @@
+.letterContainer {
+  animation: lettersMoving 1.5s infinite linear;
+}
+
+@keyframes lettersMoving {
+  from {
+    transform: translateX(-20vw);
+  }
+  to {
+    transform: translateX(0vw);
+  }
+}
+
+.negative:hover {
+  opacity: 1;
+  transition: opacity 0s ease-in-out;
+}
+
+.linesContainer {
+  animation:  lines 0.8s infinite cubic-bezier(0.075, 1, 0.095, 2);
+}
+
+@keyframes lines {
+  0% { background-image: url("../images/lines1.png");background-size: 115% }
+  40% { background-image: url("../images/lines2.png");background-size: 115% }
+  80% { background-image: url("../images/lines3.png");background-size: 115% }
+}
+
+.linesContainer:hover {
+  animation:  linesGrow 3s infinite cubic-bezier(0.035, 1, 0.095, 1);
+}
+
+@keyframes linesGrow {
+  0% {background-size: 115% 115%;}
+  50% {background-size: 115% 150%;}
+  100% {background-size: 115% 115%;}
+}
+
+.mainTextContainer:hover  .mainText{
+  font-size: 2.6vw;
+  line-height: 110%;
+  transition: font-size 0.7s ease-in, line-height 0.7s ease-in;
+    
+}
+
+@keyframes textSize {
+  0% {font-size: 2vw;}
+  100% {font-size: 2.6vw; line-height: 110%;}
+}
+
+.bigCircle {
+  animation:  hugeCircle 4s infinite ease-in-out;
+}
+.bigCircleSecond {
+  animation:  hugeCircleSecond 4s infinite ease-in-out;
+}
+  
+@keyframes hugeCircle {
+  0% {margin-top: -70vw;}
+  100% {margin-top: -25vw;}
+}
+
+@keyframes hugeCircleSecond {
+  0% {margin-top: -25vw;}
+  100% {margin-top: 32vw;}
+}
+
+.eyeCircle {
+  top: 8vw;
+  left: 9vw;
+  animation: eyeBallMove 4s infinite linear;
+  transition: left 0.6s, top 0.6s ease-in-out;
+}
+
+@keyframes eyeBallMove {
+  0% {top: 8vw; left: 9vw}
+  15% {top: 5vw; left: 7.5vw;}
+  30% {top: 9vw; left: 4vw}
+  45% {top: 10vw; left: 10vw}
+  60% {top: 9vw; left: 14vw}
+  75% {top: 6vw; left: 13vw}
+  85% {top: 5vw; left: 10vw}
+  95% {top: 9vw; left: 9vw}
+}
+
+.eyeBlock:hover .eyeCircle{
+  animation-play-state: paused;
+}
+
+.mainContent {
+  animation:  backgroundMove 1.5s infinite linear;
+}
+
+@keyframes backgroundMove {
+  0% {background-position: 0 -10vw;}
+  100% {background-position: 0 -1.2vw;}
+}
+
+.sceneText {
+  animation: sceneTextMove 3s infinite linear;
+}
+
+@keyframes sceneTextMove {
+  from {
+    transform: translateX(-22.3vw);
+  }
+  to {
+    transform: translateX(-70vw);
+  }
+}
+
+.sceneText:hover {
+  color: white;
+  transition: color 2s linear;
+  animation-play-state: paused;
+}
+
+.invertLine:hover {
+  width:100%;
+  transition: width 1s ease;
+}
+
+.centerLight {
+  animation: centerLightMove 3s infinite ease-in-out;
+}
+
+@keyframes centerLightMove {
+  0% {perspective: 5vw; transform: rotateX(50deg);}
+  50% {top: -10vw;perspective: 28vw; transform: rotateX(60deg);}
+  100% {perspective: 5vw; transform: rotateX(50deg);}
+}
+
+.leftLight{
+  animation: LightLineMoveLeft 3s infinite;
+}
+
+@keyframes LightLineMoveLeft {
+  0% {perspective: 28vw; transform: rotateX(50deg) rotateZ(20deg)}
+  50% {top: -12vw; transform: rotateX(60deg) rotateZ(20deg)}
+  100% {perspective: 28vw; transform: rotateX(50deg) rotateZ(20deg) }
+}
+
+.rightLight{
+  animation: LightLineMoveRight 3s infinite;
+}
+@keyframes LightLineMoveRight {
+  0% {perspective: 28vw; transform: rotateX(-50deg) rotateZ(-20deg)}
+  50% {top: -12vw; transform: rotateX(-60deg) rotateZ(-20deg)}
+  100% {perspective: 28vw; transform: rotateX(-50deg) rotateZ(-20deg)}
+}
+
+.danceZoneText {
+  animation: textFont 1s infinite linear;
+}
+
+@keyframes textFont {
+  0% {font-family: Dusty;}
+  25% {font-family: Eskos;}
+  50% {font-family: Klin;}
+  75% {font-family: Marske;}
+  100% {font-family: Shinners;}
+}
+
+.danceZoneText:hover {
+  font-size: 5.5vw;
+  transition: font-size 1s ease-in-out;
+}
+
+@keyframes textBigger {
+  0% {font-family: Dusty; font-size: 5vw;}
+  25% {font-family: Eskos; font-size: 5.5vw;}
+  50% {font-family: Klin; font-size: 6vw;}
+  75% {font-family: Marske; font-size: 6.5vw;}
+  100% {font-family: Shinners; font-size: 7vw;}
+}
+
+.lightCircle:hover {
+  transition: background 1s linear;
+  background: radial-gradient(50% 50% at 50% 50%, #ffffff 90%, rgba(255, 255, 255, 0.7) 110%);
+}
+
+.lightCircle:active ~ .lightLine {
+  display: none;
+  
+}
+
+.chillZoneText {
+  animation: textMoveVertical 4s infinite linear;
+}
+
+@keyframes textMoveVertical {
+  from {
+    transform: translateY(0vw);
+  }
+  to {
+    transform: translateY(-42vw);
+  }
+}
+
+.chillZoneVertical:hover  .chillZoneText{
+ animation-play-state: paused;
+}
+
+#circl1 {
+  animation: circ1Move 2s infinite ease;
+}
+
+@keyframes circ1Move {
+  0% {left:0.1vw;}
+  50% {left: 1vw;}
+  100% {left: 0.1vw;}
+}
+
+#circl2 {
+  animation: circ2Move 1.2s infinite ease;
+}
+
+@keyframes circ2Move {
+  0% {left: 12vw; top: 1.5vw}
+  50% {left: 12.5vw; top: 2vw}
+  100% {left: 12vw; top: 1.5vw}
+}
+
+#circl3 {
+  animation: circ3Move 1.5s infinite ease;
+}
+
+@keyframes circ3Move {
+  0% {left: 1vw; top: 7vw}
+  50% {left: 1.5vw; top: 8.1vw}
+  100% {left: 1vw; top: 7vw}
+}
+
+#circl4 {
+  animation: circ4Move 2s infinite ease;
+}
+
+@keyframes circ4Move {
+  0% {left: 6vw; top: 4vw}
+  50% {left: 7.6vw; top: 3vw}
+  100% {left: 6vw; top: 4vw}
+}
+
+#circl5 {
+  animation: circ5Move 2s infinite ease;
+}
+
+@keyframes circ5Move {
+  0% {left: 11vw; top: 8vw}
+  50% {left: 11.9vw; top: 9vw}
+  100% {left: 11vw; top: 8vw}
+}
+
+#circl6 {
+  animation: circ6Move 1.7s infinite ease;
+}
+
+@keyframes circ6Move {
+  0% {left: 0.2vw; top: 14vw}
+  50% {left: 1.4vw; top: 15.3vw}
+  100% {left: 0.2vw; top: 14vw}
+}
+
+#circl7 {
+  animation: circ7Move 2.6s infinite ease;
+}
+
+@keyframes circ7Move {
+  0% {left: 5vw; top: 12vw}
+  50% {left: 3.5vw; top: 11vw}
+  100% {left: 5vw; top: 12vw}
+}
+
+#circl8 {
+  animation: circ8Move 1.8s infinite ease;
+}
+
+@keyframes circ8Move {
+  0% {left: 10vw; top: 14.7vw}
+  50% {left: 11.9vw; top: 14vw}
+  100% {left: 10vw; top: 14.7vw}
+}
+
+.miniCircle:hover {
+  background: radial-gradient(74.07% 74.07% at 50% 50%,  rgba(255, 255, 255, 0.00) 10%, black 50%);
+  transition: background 1s linear;
+  animation-play-state: paused;
+}
+
+.hager {
+  animation: hagersMove 2.2s infinite linear;
+}
+
+@keyframes hagersMove {
+  from {
+    transform: translateX(0vw);
+  }
+  to {
+    transform: translateX(-34.3vw);
+  }
+}
+
+.wardrobe:hover .hager {
+  animation: hagersMoveReversed 2.2s infinite linear;
+}
+
+@keyframes hagersMoveReversed {
+  from {
+    transform: translateX(-34.3vw);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.circle {
+  animation: growingCircles 2s infinite ease-in-out;
+}
+
+@keyframes growingCircles {
+  0% {width: 7.5vw; height: 7.5vw; opacity: 1;}
+  50% {width: 8vw; height: 8vw; opacity: 0.1;}
+  100% {width: 7.5vw; height: 7.5vw; opacity: 1;}
+}
+
+#Circle1 {
+  animation: growingCircles 1s infinite ease-in-out;
+}
+
+#Circle2 {
+  animation-delay: 3s;
+  animation: growingCircles 1.7s infinite ease;
+}
+
+#Circle3 {
+  animation-delay: 2s;
+  animation: growingCircles 1.8s infinite ease;
+}
+
+#Circle4 {
+  animation-delay: 1s;
+  animation: growingCircles 1s infinite ease-in-out;
+}
+
+#Circle5 {
+  animation-delay: 1.5s;
+  animation: growingCircles 3s infinite ease-in-out;
+}
+
+#Circle6 {
+  animation-delay: 2.2s;
+  animation: growingCircles 2s infinite ease;
+}
+
+#Circle7 {
+  animation-delay: 0.8s;
+  animation: growingCircles 1.3s infinite ease-out;
+}
+
+#Circle8 {
+  animation-delay: 1.2s;
+  animation: growingCircles 1.9s infinite ease;
+}
+
+#Circle9 {
+  animation-delay: 2s;
+  animation: growingCircles 0.8s infinite ease;
+}
+
+#Circle10 {
+  animation-delay: 1s;
+  animation: growingCircles 1s infinite linear;
+}
+
+#Circle11 {
+  animation-delay: 1.5s;
+  animation: growingCircles 1.5s infinite ease-in;
+}
+
+#Circle12 {
+  animation-delay: 1.9s;
+  animation: growingCircles 2s infinite ease-in;
+}
+
+#Circle12 {
+  animation-delay: 1.9s;
+  animation: growingCircles 2s infinite ease-in;
+}
+
+#Circle13 {
+  animation-delay: 1.2s;
+  animation: growingCircles 1.4s infinite ease;
+}
+
+#Circle14 {
+  animation-delay: 2s;
+  animation: growingCircles 1s infinite ease;
+}
+
+#Circle15 {
+  animation-delay: 1s;
+  animation: growingCircles 1s infinite ease-in-out;
+}
+
+#Circle16 {
+  animation-delay: 0.7s;
+  animation: growingCircles 1.3s infinite ease-in-out;
+}
+
+#Circle17 {
+  animation-delay: 1.8s;
+  animation: growingCircles 2s infinite ease;
+}
+
+#Circle18 {
+  animation-delay: 2.4s;
+  animation: growingCircles 1.3s infinite ease;
+}
+
+#Circle19 {
+  animation-delay: 1s;
+  animation: growingCircles 2s infinite ease-in-out;
+}
+
+#Circle20 {
+  animation-delay: 1s;
+  animation: growingCircles 1.2s infinite ease;
+}
+
+#Circle21 {
+  animation-delay: 1.3s;
+  animation: growingCircles 0.9s infinite ease;
+}
+
+#Circle22 {
+  animation-delay: 2s;
+  animation: growingCircles 1s infinite ease-in-out;
+}
+
+#Circle23 {
+  animation-delay: 0.7s;
+  animation: growingCircles 2s infinite ease-in-out;
+}
+
+#Circle24 {
+  animation-delay: 1.8s;
+  animation: growingCircles 1s infinite ease-in-out;
+}
+
+#Circle25 {
+  animation-delay: 2.2s;
+  animation: growingCircles 1.4s infinite ease;
+}
+
+#Circle26 {
+  animation-delay: 2.7s;
+  animation: growingCircles 1.8s infinite ease;
+}
+
+#Circle27 {
+  animation-delay: 1s;
+  animation: growingCircles 1.8s infinite ease-in-out;
+}
+
+.circle:hover{
+  background-color: rgb(255, 255, 255);
+}
+
+#Circle1:hover  {
+  opacity: 1;
+  animation:  none;
+  transition: opacity 1s linear;
+}
+
+#Circle2:hover  {
+  opacity: 1;
+  animation:  none;
+  transition: opacity 1s linear;
+}
+
+#Circle3:hover  {
+  opacity: 1;
+  animation:  none;
+  transition: opacity 1s linear;
+}
+
+#Circle4:hover  {
+  opacity: 1;
+  animation:  none;
+  transition: opacity 1s linear;
+}
+
+#Circle5:hover  {
+  opacity: 1;
+  animation:  none;
+  transition: opacity 1s linear;
+}
+
+#Circle6:hover  {
+  opacity: 1;
+  animation:  none;
+  transition: opacity 1s linear;
+}
+
+#Circle7:hover  {
+  opacity: 1;
+  animation:  none;
+  transition: opacity 1s linear;
+}
+
+#Circle8:hover  {
+  opacity: 1;
+  animation:  none;
+  transition: opacity 1s linear;
+}
+
+#Circle9:hover  {
+  opacity: 1;
+  animation:  none;
+  transition: opacity 1s linear;
+}
+
+#Circle10:hover  {
+  opacity: 1;
+  animation:  none;
+  transition: opacity 1s linear;
+}
+
+#Circle11:hover  {
+  opacity: 1;
+  animation:  none;
+  transition: opacity 1s linear;
+}
+
+#Circle12:hover  {
+  opacity: 1;
+  animation:  none;
+  transition: opacity 1s linear;
+}
+
+#Circle13:hover  {
+  opacity: 1;
+  animation:  none;
+  transition: opacity 1s linear;
+}
+
+#Circle14:hover  {
+  opacity: 1;
+  animation:  none;
+  transition: opacity 1s linear;
+}
+
+#Circle15:hover  {
+  opacity: 1;
+  animation:  none;
+  transition: opacity 1s linear;
+}
+
+#Circle16:hover  {
+  opacity: 1;
+  animation:  none;
+  transition: opacity 1s linear;
+}
+
+#Circle17:hover  {
+  opacity: 1;
+  animation:  none;
+  transition: opacity 1s linear;
+}
+
+#Circle18:hover  {
+  opacity: 1;
+  animation:  none;
+  transition: opacity 1s linear;
+}
+
+#Circle19:hover  {
+  opacity: 1;
+  animation:  none;
+  transition: opacity 1s linear;
+}
+
+#Circle20:hover  {
+  opacity: 1;
+  animation:  none;
+  transition: opacity 1s linear;
+}
+
+#Circle21:hover  {
+  opacity: 1;
+  animation:  none;
+  transition: opacity 1s linear;
+}
+
+#Circle22:hover  {
+  opacity: 1;
+  animation:  none;
+  transition: opacity 1s linear;
+}
+
+#Circle23:hover  {
+  opacity: 1;
+  animation:  none;
+  transition: opacity 1s linear;
+}
+
+#Circle23:hover  {
+  opacity: 1;
+  animation:  none;
+  transition: opacity 1s linear;
+}
+
+#Circle24:hover  {
+  opacity: 1;
+  animation:  none;
+  transition: opacity 1s linear;
+}
+
+#Circle25:hover  {
+  opacity: 1;
+  animation:  none;
+  transition: opacity 1s linear;
+}
+
+#Circle26:hover  {
+  opacity: 1;
+  animation:  none;
+  transition: opacity 1s linear;
+}
+
+#Circle27:hover  {
+  opacity: 1;
+  animation:  none;
+  transition: opacity 1s linear;
+}
+
+.movingText {
+  animation: moveText 1.5s infinite linear;
+}
+
+@keyframes moveText {
+  from {
+    transform: translateX(-14vw);
+  }
+  to {
+    transform: translateX(3vw);
+  }
+}
+
+.authorText {
+  animation: moveTextAuthor 2.6s infinite linear;
+}
+
+@keyframes moveTextAuthor {
+  from {
+    transform: translateX(0vw);
+  }
+  to {
+    transform: translateX(-17.6vw);
+  }
+}
+.movingText:hover {
+  animation-play-state: paused;
+}
+
+.authorText:hover {
+  animation-play-state: paused;
+}

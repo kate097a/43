@@ -35,23 +35,23 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     let paged = {
-        1: "./img/book/2.png",
-        2: "./img/book/3.png",
-        3: "./img/book/4.png",
-        4: "./img/book/5.png",
-        5: "./img/book/6.png",
-        6: "./img/book/7.png",
-        7: "./img/book/8.png",
-        8: "./img/book/9.png",
-        9: "./img/book/10.png",
-        10: "./img/book/11.png",
-        11: "./img/book/12.png",
-        12: "./img/book/13.png",
-        13: "./img/book/14.png",
-        14: "./img/book/15.png",
-        15: "./img/book/16.png",
-        16: "./img/book/17.png",
-        17: "./img/book/18.png",
+        1: "./img/book/1.png",
+        2: "./img/book/2.png",
+        3: "./img/book/3.png",
+        4: "./img/book/4.png",
+        5: "./img/book/5.png",
+        6: "./img/book/6.png",
+        7: "./img/book/7.png",
+        8: "./img/book/8.png",
+        9: "./img/book/9.png",
+        10: "./img/book/10.png",
+        11: "./img/book/11.png",
+        12: "./img/book/12.png",
+        13: "./img/book/13.png",
+        14: "./img/book/14.png",
+        15: "./img/book/15.png",
+        16: "./img/book/16.png",
+        17: "./img/book/17.png",
 
     }
 
@@ -149,23 +149,20 @@ document.addEventListener("DOMContentLoaded", function() {
         }, false);
     }
 
-
     function cheakerText(elem) {
         if (elem == "main") {
             return "главное меню"
-        } else if (elem == "shop") {
-            console.log("shop")
-            return "магазин"
         } else if (elem == "place") {
             console.log("place")
             return "пространство"
         } else if (elem == "book") {
             console.log("book")
             return "книга"
+        } else if (elem == "posters") {
+            console.log("posters")
+            return "постеры"
         }
     }
-
-
 
 
 })

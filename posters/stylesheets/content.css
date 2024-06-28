@@ -119,11 +119,6 @@ p{
     top: 8vw
 }
 
-#shop {
-    left: 73vw;
-    top: 13vw
-}
-
 #place { 
     left: 80vw;
     top: 32vw
@@ -132,6 +127,11 @@ p{
 #book { 
     left: 15vw;
     top: 32vw
+}
+
+#posters { 
+    left: 75vw;
+    top: 10vw
 }
 
 .wrapScreenContent{
@@ -273,4 +273,28 @@ p{
 #poster18 {
     top: 8vw;
     left: 0vw;
+}
+
+.posterInt {
+    position: absolute;
+    transition: all 0.3s;
+    mix-blend-mode: lighten;
+    opacity: 1;
+    background-size: 100%;
+}
+
+#posterr1 {
+    background-image: url("../img/er.jpg");
+    width: 11vw;
+    height: 20vw;
+    top: 22vw;
+    left: 75vw;
+}
+
+#posterr2 {
+    background-image: url("../img/re.png");
+    width: 20vw;
+    height: 8vw;
+    top: -2vw;
+    left: 60vw;
 }

@@ -1,0 +1,253 @@
+*{
+  box-sizing: border-box;
+}
+html, body{
+  height: 100%;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: "CarlaSansLight";
+  src: url("../fonts/CarlaSansLight.ttf") format("truetype");
+  font-style: Light;
+  font-weight: Light;
+}
+
+p{
+  font-family: 'CarlaSansLight';
+}
+
+body {
+  background-color: black;
+}
+
+.makeup {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 44vw;
+  overflow: hidden;
+}
+
+canvas {
+  background-image: url("../img/head.png");
+  background-size: 68vw 68vw;
+  background-position: -5vw -15vw;
+  width: 50vw;
+  height: 45vw;
+  z-index: 75757675;
+}
+
+.drawing {
+  width: 55vw;
+  height: 45vw;
+  overflow: hidden;
+  margin-right: 3vw;
+}
+
+.drawingItems {
+  display: flex;
+  width: 30vw;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pallet {
+  display: flex;
+  width: 32vw;
+  height: 24vw;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 4vw;
+}
+
+.color {
+  width: 8vw;
+  height: 7vw;
+  background-color: aqua;
+}
+
+.colorButton {
+  width: 9vw;
+  height: 7vw;
+}
+
+canvas {
+  cursor: crosshair;
+
+}
+
+.paint-tools {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5vw;
+  width: 100%;
+}
+
+button {
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.paint-tools {
+  display: flex;
+  width: 30vw;
+}
+
+.tools {
+  display: flex;
+  width: 30vw;
+  height: 37vw;
+  flex-wrap: wrap;
+  margin-left: 10vw;
+  justify-content: center;
+  margin-top: 3vw;
+}
+
+
+#pen {
+  width: 18vw;
+  height: 6vw;
+  background-image: url("../img/brush.png");
+  background-size: 18vw 15vw;
+  background-position: -2vw -3vw;
+}
+
+.pen {
+  width: 18vw;
+  height: 6vw;
+  overflow: hidden;
+}
+
+#eraser {
+  width: 12vw;
+  height: 10vw;
+  background-image: url("../img/eraser.png");
+  background-size: 12vw 10vw;
+  background-position: -0vw -1vw;
+}
+
+
+.eraser {
+  width: 18vw;
+  height: 6vw;
+  overflow: hidden;
+}
+
+.pen {
+  margin-bottom: 1vw;
+}
+
+.eraser {
+  margin-top: -2vw;
+}
+
+
+#red1 {
+  background-color: #C11212;
+}
+
+#orange1 {
+  background-color: #D76919;
+}
+
+#yellow1 {
+  background-color: #E5B50C;
+}
+
+#yellow1 {
+  background-color: #E5B50C;
+}
+
+#green1 {
+  background-color: #56C512;
+}
+
+#lightBlue1 {
+  background-color: #13C5AF;
+}
+
+
+#blue1 {
+  background-color: #164FBF;
+}
+
+#purple1 {
+  background-color: #923BC6;
+}
+
+#pink1 {
+  background-color: #C8239A;
+}
+
+#black1 {
+  background-color: #000000;
+  border: 0.01vw white solid;
+}
+
+.choosen {
+  width: 8vw;
+  height: 7vw;
+  border: 0.3vw white solid;
+}
+
+.lines {
+  position: relative;
+  z-index: -3;
+}
+
+.linesContainer {
+  width: 60vw;
+  height: 40vw;
+  margin-top: 3vw;
+  position: absolute;
+  background-image: url("../img/lines1.png");
+  background-size: 250% 100%;
+  animation:  lines 0.5s infinite cubic-bezier(0.075, 1, 0.095, 2);
+}
+
+.lineSecond {
+  margin-top: 34vw;
+}
+
+@keyframes lines {
+  0% { background-image: url("../img/lines1.png");background-size: 250% 100% }
+  40% { background-image: url("../img/lines2.png");background-size: 250% 100%}
+  80% { background-image: url("../img/lines3.png");background-size: 250% 100%}
+}
+
+.back {
+  position: absolute;
+  width: 5vw;
+  height: 15vw;
+  overflow: hidden;
+  margin-top: 3vw;
+}
+
+.back:hover {
+  animation: movii 1s ease-in infinite;
+}
+
+@keyframes movii {
+  0% {margin-top: 3vw;}
+  50% {margin-top: 7vw;}
+  100% {margin-top: 3vw;}
+}
+
+#back1 {
+  width: 5vw;
+  height: 10vw;
+  background-image: url("../img/Arrow.svg");
+  background-size: 5vw 10vw;
+  transition: all 0.3s;
+}

@@ -11,23 +11,13 @@
     <meta property="og:image" content="{картинка}">
     <title>Шаблон</title>
       <link href="./stylesheets/style.css" rel="stylesheet" type="text/css"/>
-      <script type="importmap">
-        {
-          "imports": {
-            "three": "https://unpkg.com/three@0.139.0/build/three.module.js",
-            "OrbitControls": "https://unpkg.com/three@0.139.0/examples/jsm/controls/OrbitControls.js",
-            "GLTFLoader": "https://unpkg.com/three@0.139.0/examples/jsm/loaders/GLTFLoader.js",
-            "RectAreaLightUniformsLib": "https://unpkg.com/three@0.139.0/examples/jsm/lights/RectAreaLightUniformsLib.js",
-            "RectAreaLightHelper": "https://unpkg.com/three@0.139.0/examples/jsm/helpers/RectAreaLightHelper.js"
-          }
-        }
-  </script>
-  <script src="java-script.js" type="module" charset="utf-8"></script>
+  <script src="./javascripts/java-script.js" type="module" charset="utf-8"></script>
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   </head>
   <body>
 
     <div  class="noise"></div>
+    <div class="cursorDot" id="cursorDot"></div>
     <div class="fixedHelper">
       <section class="fixedMenu" id="fixedMenu">
         <div class="back" id="back"></div>
@@ -35,10 +25,6 @@
         <nav class="navigation">
           <form action="../index.html">
             <button class="navBtn" id="main"></button>
-           </form>
-          <button class="navBtn" id="shop"></button>
-          <form action="##">
-            <button class="navBtn" id="shop"></button>
            </form>
            <form action="../place/index.html">
             <button class="navBtn" id="place"></button>
@@ -51,7 +37,6 @@
            </form>
         </nav>
       </section>
-      <div class="cursorDot" id="cursorDot"></div>
       
     </div>
 
@@ -65,16 +50,21 @@
           <p class="menuTip" id="model">внешний вид</p>
         </nav>
       </section>
-      <div class="model block visible"></div>
 
-      <section class="concertHall block">
-        <div class="imgSlider">
-          <img class="imgInSlider" src="./img/hall1.png">
-          <img class="imgInSlider" src="./img/hall2.png">
-          <img class="imgInSlider" src="./img/hall1.png">
-          <img class="imgInSlider" src="./img/hall2.png">
+      <div class="scrol">
+        <div class="scrolling">
+          <section class="concertHall block">
+            <div class="imgSlider">
+              <img class="imgInSlider" src="./img/hall1.png">
+              <img class="imgInSlider" src="./img/hall2.png">
+              <img class="imgInSlider" src="./img/29.png">
+              <img class="imgInSlider" src="./img/7.png">
+              <img class="imgInSlider" src="./img/26.png">
+              <img class="imgInSlider" src="./img/32.png">
+              <img class="imgInSlider" src="./img/5.png">
+            </div>
+          </section>
         </div>
-      </section>
-
+      </div>
   </body>
 </html>

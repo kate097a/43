@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    cursor: none;
+    overflow: hidden;
+}
+
+.cursorDot {
+    width: 3vw;
+    height: 3vw;
+    border-radius: 100%;
+    transition: all 300;
+    z-index: 43434342;
+}
+
+.cursorDot {
+    position:fixed;
+    top: 0;
+    left: 0;
+    transform: translate( -50%, -50%);
+    pointer-events: none;
+}
+
+
+.back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    opacity: 0;
+    transition: all 0.7s;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  /* отображаем курсор в виде руки при наведении; некоторые
+  считают, что необходимо оставлять стрелочный вид для кнопок */
+  cursor: pointer;
+}
+
+#text {
+  margin-left: 20vw;
+  letter-spacing: -5vw;
+  margin-top: -5vw;
+  background-color: none;
+  border: none;
+}
+
+.noise {
+    position: absolute;
+    height:100vh; 
+    width: 100%;
+    background-image: url("../img/noise.gif");
+    z-index: 9999999999999999999999;
+    opacity: 0.1;
+    backdrop-filter: invert(70%);
+    pointer-events: none;
+    top: 0;
+}
+

@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+
+}
+html, body{
+    height: 100%;
+    background-color: #000000;
+}
+
+@font-face {
+  font-family: "CarlaSansLight";
+  src: url("../fonts/CarlaSansLight.ttf") format("truetype");
+  font-style: Light;
+  font-weight: Light;
+}
+
+@font-face {
+  font-family: "Giant";
+  src: url("../fonts/Giant\ Boss.otf") format("truetype");
+  font-style: Light;
+  font-weight: Light;
+}
+
+p {
+    font-family: 'CarlaSansLight';
+}
+
+.all {
+    width: 95vw;
+    height: 90vh;
+    margin: auto;
+}
+
+.listTip {
+    color: white;
+    font-size: 2vw;
+}
+
+hr {
+    width: 20vw;
+    margin-left: 0;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Open Sans', Arial, Helvetica, Sans-serif, Verdana, Tahoma;
+  }
+  
+  ul { list-style-type: none; }
+  
+  /** =======================
+   * Contenedor Principal
+   ===========================*/
+
+  
+  .accordion .link {
+    cursor: pointer;
+    display: block;
+    padding: 15px 15px 15px 42px;
+    color: #ffffff;
+    font-size: 2vw;
+    font-weight: 700;
+    position: relative;
+    -webkit-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+  }
+  
+  .accordion li:last-child .link { border-bottom: 0; }
+  
+  .accordion li i {
+    position: absolute;
+    top: 16px;
+    left: 12px;
+    color: #000000;
+    -webkit-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+  }
+
+  .accordion li.open i.fa-chevron-down {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  
+  /**
+   * Submenu
+   -----------------------------*/
+  
+  
+  .submenu {
+    display: none;
+
+    -webkit-transition: all 0.25s linear;
+    -o-transition: all 0.25s linear;
+    transition: all 0.25s linear;
+  }
+  
+  .submenu li { border-bottom: 1px solid #000000; }
+  
+  .submenu p {
+    display: flex;
+    text-decoration: none;
+    color: #d9d9d9;
+    padding-left: 2vw;
+    width: 40vw;
+    height: 20vw;
+    font-size:2vw;
+  }
+
+.rasImg {
+  width: 30vw;
+}
+
+.al {
+  display: flex;
+}
+.accordion li.open .link { color: #b63b4d; }
+
+.accordion li .link:hover{ 
+  color: #b4b4b4;
+  animation:  fonts 0.3s linear infinite;
+}
+
+@keyframes fonts {
+  0% {font-style: Giant;}
+  50%{font-style: CarlaSansLight;}
+  100% {}
+}
+
+
+hr {
+  width: 50vw;
+}
+
+.head {
+  position: absolute;
+  width: 70vw;
+  height: 65vw;
+  background-image: url("../img/head.png");
+  background-size: 90vw;
+  transition: all 1s;
+  animation: head 0.2s linear infinite;
+  left: 30vw;
+  top: -7.6vw
+}
+
+
+@keyframes head {
+  0% {background-image: url("../img/head.png");}
+  100% {background-image: url("../img/head2.png");}
+}
+
+.headBlock {
+ position: absolute; 
+ width: 80vw;
+ height: 50vw;
+ overflow: hidden;
+ right: 0;
+ bottom: 0;
+}

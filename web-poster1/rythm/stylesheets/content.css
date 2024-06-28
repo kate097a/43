@@ -1,0 +1,291 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+}
+
+@font-face {
+  font-family: "CarlaSansLight";
+  src: url("../fonts/CarlaSansLight.ttf") format("truetype");
+  font-style: Light;
+  font-weight: Light;
+}
+
+p{
+    font-family: 'CarlaSansLight';
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  /* отображаем курсор в виде руки при наведении; некоторые
+  считают, что необходимо оставлять стрелочный вид для кнопок */
+  cursor: pointer;
+}
+
+.circle {
+  width: 10vw;
+  height: 7vw;
+  background-color: rgb(185, 185, 185);
+  border-radius: 100%;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  background: radial-gradient(265.01% 265.00% at 50% 50%,rgba(255, 255, 255, 0.53),rgba(255, 255, 255, 0) 23.6%);
+  /*animation:  goingBottom 2s infinite linear; */
+}
+
+@keyframes goingBottom1 {
+  from {
+    transform: translateY(0vw), translatex(0vw);
+    width: 7vw;
+    height: 3vw;
+    left: 34vw;
+  }
+  to {
+    transform: translateY(33vw);
+    width: 20vw;
+    height: 11vw;
+    left: 14vw;
+  } 
+}
+
+@keyframes goingBottom2 {
+  from {
+    transform: translateY(0vw), translatex(0vw);
+    width: 7vw;
+    height: 3vw;
+    left: 45vw;
+  }
+  to {
+    transform: translateY(33vw) translatex(0px);
+    width: 20vw;
+    height: 11vw;
+    left: 40vw;
+  }
+}
+
+@keyframes goingBottom3 {
+  from {
+    transform: translateY(0vw), translatex(0vw);
+    width: 7vw;
+    height: 3vw;
+    left: 56vw;
+  }
+  to {
+    transform: translateY(33vw);
+    width: 20vw;
+    height: 11vw;
+    left: 66vw;
+  } 
+}
+
+.button {
+  position: absolute;
+  width: 20vw;
+  height: 11vw;
+  border: #ffffff 1px solid;
+  border-radius: 100%;
+  top: 32vw;
+  background: radial-gradient(265.01% 265.00% at 50% 50%,rgb(255, 255, 255),rgba(255, 255, 255, 0) 23.6%);
+  transition: background 0.5s;
+}
+
+.button:active {
+  background: radial-gradient(265.01% 265.00% at 50% 50%,rgba(255, 255, 255, 0),rgb(255, 255, 255) 11.6%);
+  transition: background 0.5s;
+}
+
+.underButton {
+  position: absolute;
+  width: 20vw;
+  height: 11vw;
+  border-radius: 100%;
+  top: 33vw;
+  background: radial-gradient(265.01% 265.00% at 50% 50%,rgba(255, 255, 255, 0.53),rgba(255, 255, 255, 0) 23.6%);
+}
+
+.innerButton {
+  position: absolute;
+  width: 20vw;
+  height: 11vw;
+  border-radius: 100%;
+  top: 31vw;
+  background: radial-gradient(265.01% 265.00% at 50% 50%,rgba(255, 255, 255, 0.53),rgba(255, 255, 255, 0) 23.6%);
+}
+
+.game {
+  width: 100%;
+  height: 100%;
+}
+
+.gamePage {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  justify-content:center;
+}
+
+.tapSection {
+  width: 20vw;
+  margin-right:  6vw;
+}
+
+.tapSection:last-child {
+  margin-right: 0vw;
+}
+
+.tapSections {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.borderLine {
+  position: absolute;
+  border-top: 3px solid #ffffff;
+  border-image: linear-gradient(90deg, rgb(0, 0, 0) 5%,  rgb(255, 255, 255) 70%, rgba(255, 255, 255, 0) 90%) 5;
+}
+
+#borderLine1 {
+  transform: rotate(-58deg);
+  top: 20vw;
+  left: 2vw;
+  width: 40vw;
+  
+}
+
+#borderLine2 {
+  transform: rotate(-78deg);
+  top: 21vw;
+  left: 20.5vw;
+  width: 35vw;
+}
+
+#borderLine3 {
+  transform: rotate(-81deg);
+  top: 21vw;
+  left: 24vw;
+  width: 35vw;
+}
+
+#borderLine4{
+  transform: rotate(76deg);
+  top: 21vw;
+  left: 40vw;
+  width: 35vw;
+}
+
+#borderLine5{
+  transform: rotate(75deg);
+  top: 21vw;
+  left: 43vw;
+  width: 35vw;
+}
+
+#borderLine6 {
+  transform: rotate(54deg);
+  top: 20vw;
+  left: 57vw;
+  width: 40vw;
+}
+
+.wayLine {
+  position: absolute;
+  border-top: 3px solid #ffffff;
+  opacity: 0.9;
+  border-image: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 25%,  rgba(251, 251, 251, 0.444) 50%, rgba(255, 255, 255, 0) 90%) 5;
+}
+
+#wayLine1 {
+  transform: rotate(-67deg);
+  top: 20vw;
+  left: 10vw;
+  width: 40vw;
+}
+
+#wayLine2 {
+  transform: rotate(-93deg);
+  top: 20vw;
+  left: 29.5vw;
+  width: 40vw;
+}
+
+#wayLine3 {
+  transform: rotate(64deg);
+  top: 20vw;
+  left: 48.5vw;
+  width: 40vw;
+}
+
+#scoreText {
+  position: absolute;
+  color: #ffffff;
+  font-size: 2vw;
+  right: 10vw;
+}
+#bestScoreText {
+  position: absolute;
+  color: #ffffff;
+  font-size: 2vw;
+  right: 10vw;
+  top: 3vw;
+}
+
+.button:hover .wayline{
+  width: 20vw;
+  animation: lines 0.8s infinite cubic-bezier(0.075, 1, 0.095, 2);
+}
+
+@keyframes lines {
+  0% { background-image: url("../images/lines1.png");background-size: 115% }
+  40% { background-image: url("../images/lines2.png");background-size: 115% }
+  80% { background-image: url("../images/lines3.png");background-size: 115% }
+}
+
+#end {
+  margin: 100vw;
+  height: 100vh;
+  background-color: black;
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 342343423;
+}
+
+
+.back {
+  position: absolute;
+  width: 5vw;
+  height: 15vw;
+  overflow: hidden;
+  margin-top: 3vw;
+  z-index: 879;
+}
+
+
+.back:hover {
+  animation: movii 1s ease-in infinite;
+}
+
+@keyframes movii {
+  0% {margin-top: 3vw;}
+  50% {margin-top: 7vw;}
+  100% {margin-top: 3vw;}
+}
+
+#back1 {
+  width: 5vw;
+  height: 10vw;
+  background-image: url("/rythm/img/Arrow.svg");
+  background-size: 5vw 10vw;
+  transition: all 0.3s;
+  background-color: none;
+}

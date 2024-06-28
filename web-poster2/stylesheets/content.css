@@ -1,0 +1,667 @@
+*{
+  box-sizing: border-box;
+}
+
+/* Скрываем scrollbar для Chrome, Safari и Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+ 
+/* Скрываем scrollbar для IE, Edge и Firefox */
+body {
+  -ms-overflow-style: none;  /* IE и Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+html, body{
+  height: 100%;
+}
+
+body {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+}
+
+@font-face {
+  font-family: "Songer";
+  src: url("../fonts/songer-semiexpanded.otf") format("truetype");
+  font-style: Light;
+  font-weight: Light;
+}
+
+@font-face {
+  font-family: "Dusty";
+  src: url("../fonts/Dusty\ Pro.ttf") format("truetype");
+  font-style: Light;
+  font-weight: Light;
+}
+
+@font-face {
+  font-family: "Eskos";
+  src: url("../fonts/ESKOS-DISPLAY.ttf") format("truetype");
+  font-style: Light;
+  font-weight: Light;
+}
+
+@font-face {
+  font-family: "Klin";
+  src: url("../fonts/klin_@03.ttf") format("truetype");
+  font-style: Light;
+  font-weight: Light;
+}
+
+@font-face {
+  font-family: "Marske";
+  src: url("../fonts/Marske.ttf") format("truetype");
+  font-style: Light;
+  font-weight: Light;
+}
+
+@font-face {
+  font-family: "Shinners";
+  src: url("../fonts//shinners-regular.ttf") format("truetype");
+  font-style: Light;
+  font-weight: Light;
+}
+
+
+p h1 {
+  font-family: 'Songer';
+  color: rgb(227, 227, 227);
+}
+
+.titleText {
+  font-family: 'Songer';
+  color: rgb(255, 255, 255);
+  font-size: 19vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  height: 15vw;
+  margin-top: -5vw;
+  width:20vw
+}
+
+.lineMainText {
+  background-color: black;
+  overflow: hidden;
+}
+
+.mainTitleLetter {
+  border: 1px solid rgb(248, 248, 248);
+  margin-top: 1%;
+  border-radius: 2vw 0 0 2vw;
+  width: 20%;
+  height: 15vw;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  border-left: 0;
+  border-right: 0;
+}
+
+#firstContainer {
+  border-radius: 2vw 0 0 2vw;
+  border-left: 1px white solid;
+}
+
+#secondContainer {
+  border-radius: 0 0 0 0;
+}
+
+#thirdContainer {
+  border-radius: 0 0 0 0;
+}
+
+#fourthContainer {
+  border-radius: 0 0 0 0;
+}
+
+#fivethContainer {
+  border-radius: 0 2vw 2vw 0;
+  border-right: 1px white solid;
+}
+
+.negative {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  mix-blend-mode: exclusion;
+}
+
+.mainTextContainer {
+  border: 1px solid rgb(248, 248, 248);
+  border-radius: 2vw;
+  width: 46%;
+  background-color: black;
+  height: 30vw;
+  overflow: hidden;
+  position: relative;
+}
+
+.mainText {
+  font-family: 'Songer';
+  color: rgb(238, 238, 238);
+  font-size: 2vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 99%;
+  margin: 10px;
+  width: 90%;
+  transition: all 0.7s;
+}
+
+.header {
+  margin-bottom: 1vw;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 2vw;
+
+}
+
+.lineMainText {
+  display: flex;
+  margin-bottom: 1vw; 
+}
+
+.linesContainer {
+  border: 1px solid rgb(248, 248, 248);
+  border-radius: 2vw;
+  width: 52.5%;
+  height: 30vw;
+  margin-left: 1.5%;
+  overflow: hidden;
+  background-image: url("../images/lines1.png");
+  background-position: -5vw -2vw;
+  background-size: 115%;
+}
+
+.linesImage {
+  width: 140%;
+  height: 90%;
+  margin-left: -100px;
+}
+
+.schemeAndEye {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.eyeBlock {
+  background-color: black;
+  border: white solid 1px;
+  border-radius: 2vw;
+  margin-bottom: 3vw;
+  padding: 1vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.scheme {
+  background-color: black;
+  border: white solid 1px;
+  width: 60%;
+  border-radius: 2px;
+}
+
+.eyeImg {
+  width: 100%;
+  height: 24vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.eyeCircle {
+  width: 10vw;
+  height: 10vw;
+  border-radius: 100%;
+  position: absolute;
+  top: 8vw;
+  left: 9vw;
+  background: radial-gradient(74.07% 74.07% at 50% 50%, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.mainContent {
+  padding: 3vw 0;
+  background-image: url("../images/backgroundWhiteBlack.png");
+  border-radius: 2vw;
+  background-size: 87vw;
+  background-position: 0 -15vw;
+}
+
+.sceneBlock {
+  width: 50%;
+  height: 20vw;
+  margin-right: 10%;
+  background-color: black;
+  border-radius: 2vw 2vw 0 0;
+  margin-bottom: 4vw;
+}
+
+.chillZoneBlock {
+  border-radius: 2vw 0 0 2vw;
+  width: 40%;
+  height: 30vw;
+  background-color: black;
+  position: relative;
+}
+
+.danceZoneBlock {
+  margin-top: -10vw;
+  width: 50%;
+  height: 40vw;
+  background-color: black;
+  padding-top: 5vw;
+}
+
+.exitBlock {
+  width: 10%;
+  height: 25vw;
+  background-color: black;
+  border-radius: 0 2vw 2vw 0;
+}
+
+.wardrobeBlock {
+  width: 60%;
+  height: 15vw;
+  background-color: black;
+  margin: 0  0  0 30%;
+  border-radius: 0 0 2vw 2vw;
+  position: relative;
+}
+
+.scene {
+  width: 80%;
+  height: 80%;
+  margin:  2vw auto;
+  border: white 1px solid;
+  border-radius: 2vw;
+  background-color: #FFF;
+  overflow: hidden;
+  position: relative;
+}
+
+.sceneText {
+  font-family: 'Songer';
+  color: rgb(0, 0, 0);
+  font-size: 13vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90%;
+  -webkit-text-stroke: 1.5vw;
+  -webkit-text-stroke-color: black;
+  margin-top: 2vw;
+  text-align: center;
+}
+
+.invertLine {
+  width: 4vw;
+  height: 100%;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0vw;
+  mix-blend-mode: exclusion;
+  transition: width 1s ease;
+}
+
+.chillZone {
+  width: 80%;
+  height: 80%;
+  margin:  2vw auto;
+  border: white 1px solid;
+  border-radius: 2vw;
+  overflow: hidden;
+  display: flex;
+  z-index: 40;
+}
+
+.chillZoneVertical {
+  background-color: #FFF;
+  width: 20%;
+  z-index: 90;
+}
+
+.chillZoneCircles {
+  display: flex;
+  width: 80%;
+  position: relative;
+  padding: 2%;
+}
+
+.miniCircle {
+  width: 7vw;
+  height: 7vw;
+  background: radial-gradient(74.07% 74.07% at 50% 50%, #FFF 1%, rgba(255, 255, 255, 0.00) 100%);
+  border-radius: 100%;
+  border: 1px rgb(73, 73, 73) solid;
+  position: absolute;
+  top: -9vw;
+}
+
+#circl1 {
+  left: 0.1vw;
+  top: 0.5vw;
+}
+
+#circl2 {
+  left: 12vw;
+  top: 1.5vw; z-index: 11;
+}
+
+#circl3 {
+  left: 1vw;
+  top: 7vw;
+  z-index: 111;
+}
+
+#circl4 {
+  left: 6vw;
+  top: 4vw;
+  z-index: 1111;
+}
+
+#circl5 {
+  left: 11vw;
+  top: 8vw;
+  z-index: 122;
+}
+
+#circl6 {
+  left: 0.2vw;
+  top: 14vw;
+  z-index: 111;
+}
+
+#circl7 {
+  left: 5vw;
+  top: 12vw;
+  z-index: 111;
+}
+
+#circl8 {
+  left: 11.5vw;
+  top: 14vw;
+}
+
+.chillZoneText {
+  color: #000;
+  font-family: SONGER SemiExpanded;
+  font-size: 5vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  margin-top: -2vw;
+  text-align: center;
+  -webkit-text-stroke: 0.5vw;
+  -webkit-text-stroke-color: black;
+}
+
+.plus {
+  margin-top: -2.6vw;
+}
+
+.t {
+  margin-top: -2vw;
+}
+
+.d {
+  margin-top: -2.2vw;
+}
+
+.i {
+  margin-top: -1.7vw;
+}
+
+.h {
+  margin-top: -2.2vw;
+  margin-bottom: -1vw;
+}
+
+.b {
+  margin-top: -2.5vw;
+}
+
+.a {
+  margin-top: -2.2vw;
+}
+
+.r {
+  margin-top: -2.2vw;
+}
+
+.o {
+  margin-top: -2.5vw;
+}
+
+.danceZone {
+  width: 80%;
+  height: 85%;
+  margin:  1vw auto;
+  border: white 1px solid;
+  border-radius: 2vw;
+  position: relative;
+  display: flex;
+}
+
+.danceZoneText {
+  color: #FFF;
+  font-family: SONGER SemiExpanded;
+  font-size: 4vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 99.239%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15vw;
+  -webkit-text-stroke: 0.5vw;
+  -webkit-text-stroke-color: white;
+  animation: textFont 2s infinite linear;
+  z-index: 11111;
+  transition: font-size 0.6s ease-in-out;
+}
+
+.wardrobe {
+  width: 80%;
+  height: 80%;
+  margin:  1vw auto;
+  border: white 1px solid;
+  border-radius: 2vw;
+  overflow: hidden;
+}
+
+.hager {
+  width: 10vw;
+  height: 15vw;
+  background-size: 9vw 18vw;
+  background-position: 0 15vw;
+  background-image: url("../images/hanger.svg");
+  margin-left: -5vw;
+  margin-top: -2.7vw;
+  z-index: 50;
+}
+
+.hagers {
+  display: flex;
+  width: 80vw;
+}
+
+.wardrobeStick {
+  height: 0.7vw;
+  margin-top: 2vw;
+  width: 100%;
+  background-color: #FFF;
+}
+
+.wordrobeText {
+  color: #000;
+  font-family: SONGER SemiExpanded;
+  font-size: 5vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  margin-top: -2vw;
+  text-align: center;
+  -webkit-text-stroke: 0.5vw;
+  -webkit-text-stroke-color: black;
+  position: absolute;
+  z-index: 56;
+  left: 9vw;
+  top: 8vw
+}
+
+.thatOneHager {
+  z-index: 3232323;
+}
+
+.circle {
+  width: 7.5vw;
+  height: 7.5vw;
+  border: 0.1875em solid #e4e4e4;
+  border-radius: 100%;
+  margin: 0.5vw;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(217, 217, 217, 0.00) 0%, #D9D9D9 100%);
+}
+
+.circles {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.circlesRow {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.circlesBlock {
+  border: #FFF 1px solid;
+  border-radius: 2vw;
+  margin: 1vw 0;
+  padding: 1vw;
+  height: 29vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movingText {
+  font-family: 'Songer';
+  color: rgb(255, 255, 255);
+  font-size:  5vw;
+  margin-left: -100px;
+}
+
+.movingTextContainer {
+  overflow: hidden;
+  margin-bottom: 1vw;
+}
+
+.movingTextAuthor {
+  overflow: hidden;
+}
+
+.authorText {
+  font-family: 'Songer';
+  color: rgb(255, 255, 255);
+  font-size: 1vw;
+  margin-bottom: 2vw;
+}
+
+.ending {
+  overflow: hidden;
+}
+
+.endingGif {
+  width: 100%;
+}
+
+.bigCircle {
+  background: radial-gradient(50% 50% at 50% 50%, rgba(217, 217, 217, 0.00) 0%, #D9D9D9 100%);
+  width: 40vw;
+  height: 40vw;
+  border-radius: 100%;
+  mix-blend-mode: difference;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.bigCircleSecond {
+  background: radial-gradient(50% 50% at 50% 50%, rgba(217, 217, 217, 0.00) 0%, #D9D9D9 100%);
+  width: 40vw;
+  height: 40vw;
+  border-radius: 100%;
+  mix-blend-mode: difference;
+  margin-top: 5vw;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.blockText {
+  font-size: 15vw;
+  color: black;
+  margin-top: 10vw;
+}
+
+.lightCircle {
+  width: 8vw;
+  height: 8vw;
+  background-color: #ffffff;
+  border-radius: 100%;
+  background: radial-gradient(50% 50% at 50% 50%, #ffffff 7%, rgba(255, 255, 255, 0.7) 100%);
+  left: 36.5%;
+  border: 1px rgb(42, 42, 42) solid;
+  margin-top: -4vw;
+  position: absolute;
+  z-index: 56;
+}
+
+.lightCircleShadow {
+  width: 10vw;
+  height: 10vw;
+  background-color: #000000;
+  border-radius: 100%;
+  margin-top: -5vw;
+  position: absolute;
+  left: 33.2%;
+  z-index: 55;
+}
+
+.lightLine {
+  width: 40vw;
+  height: 50vw;
+  position: absolute;
+  left: -5vw;
+  top: -9vw;
+  opacity: 0.7;
+}
+
+.leftLight {
+  transform: rotate(35deg);
+  left: -15vw;
+  top: -9vw;
+  z-index: 51;
+}
+
+.rightLight {
+  transform: rotate(-35deg);
+  left: 5vw;
+  top: -9vw;
+  z-index: 50;
+}

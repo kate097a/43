@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <!-- ltr - Текст отображается как обычно — слева направо -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="{ссылка}">
+    <meta property="og:title" content="название">
+    <meta property="og:description" content="текст">
+    <meta property="og:image" content="{картинка}">
+    <title>Шаблон</title>
+      <link href="./stylesheets/style.css" rel="stylesheet" type="text/css"/>
+      <script src="javascripts/jquery-3.7.1.js" charset="utf-8"></script>
+      <script src="javascripts/java-script.js" charset="utf-8"></script>
+      <script src="javascripts/3d.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <form class="back" action="../index.html">
+      <button id="back1"></button>
+    </form>
+
+    <section class="game">
+      <div class="gamePage">
+        <p id="scoreText"> счет: 0</p>
+        <p id="bestScoreText"> лучший счет: 0</p>
+        <div class="wayLine" id="wayLine1"></div>
+        <div class="wayLine" id="wayLine2"></div>
+        <div class="wayLine" id="wayLine3"></div> 
+
+        <div class="tapSections">
+
+          <div class="tapSection" id="tapSection1">
+            <div class="underButton"></div>
+            <button class="button first" id="button1"></button>
+          </div>
+
+ 
+          <div class="tapSection" id="tapSection2">
+            <div class="underButton"></div>
+            <button class="button second" id="button2"></button>
+          </div>
+
+          <div class="tapSection" id="tapSection3">
+            <div class="underButton"></div>
+            <button class="button third" id="button3"></button>
+          </div>
+        </div>
+        <div class="borderLine" id="borderLine1"></div>
+        <div class="borderLine" id="borderLine2"></div>
+        <div class="borderLine" id="borderLine3"></div>
+        <div class="borderLine" id="borderLine4"></div>
+        <div class="borderLine" id="borderLine5"></div>
+        <div class="borderLine" id="borderLine6"></div>
+      </div>
+    </section>
+
+
+    <section class="end" id="end">
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.js"></script>
+    <script>
+        var sound = new Howl({
+          src: ['music.mp3'],
+          volume: 0.5,
+          loop: true,
+        });
+        sound.play()
+    </script>
+
+  </body>
+</html>

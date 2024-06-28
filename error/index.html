@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <!-- ltr - Текст отображается как обычно — слева направо -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="{ссылка}">
+    <meta property="og:title" content="название">
+    <meta property="og:description" content="текст">
+    <meta property="og:image" content="{картинка}">
+    <title>Шаблон</title>
+      <link href="./stylesheets/style.css" rel="stylesheet" type="text/css"/>
+      <script src="./javascripts/java-script.js" charset="utf-8"></script>
+      <script src="https://cdn.rawgit.com/bradley/Blotter/master/build/blotter.min.js"></script>
+      <script src="https://rawgit.com/bradley/Blotter/master/build/materials/liquidDistortMaterial.js"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  </head>
+  <body>
+    <div class="cursorDot" id="cursorDot"></div>
+    <div  class="noise"></div>
+    <form action="../index.html">
+      <button id="text"></button>
+    </form>
+  
+    <script>
+       let font = new FontFace('BowlbyOne', 'url(../fonts/BowlbyOne-Regular.ttf)');
+        font.load().then(function(loadedFont) {
+        document.fonts.add(loadedFont);
+      });
+    
+          function size() {
+            let b = 0;
+            if (window.innerHeight > window.innerWidth) {
+              b = (Math.trunc(window.innerWidth / window.innerHeight * 176));
+              return b;
+            } else if (window.innerHeight < window.innerWidth) {
+              b = (Math.trunc(window.innerWidth / window.innerHeight * 176));
+              return b;
+            }
+          }
+    
+          function pad(size) {
+            let b = [0, 0];
+            b[0] = Math.trunc((2 * size / 90))
+            return [b[0], b[1]]
+          }
+    
+          let wh = size();
+          let marg = pad(wh)
+    
+          const innerText = document.getElementById("text");
+          const text = new Blotter.Text("404", {
+            family: "BowlbyOne",
+            size: wh,
+            fill: "rgb(26, 26, 26)",
+            paddingLeft: 150,
+            paddingRight: 150,
+            paddingTop: 80,
+            paddingBottom: 80,
+            
+          });
+    
+          text.needsUpdate = true;
+          let material = new Blotter.LiquidDistortMaterial();
+    
+          material.uniforms.uVolatility.value = 0.1;
+          material.uniforms.uSpeed.value = 0.2;
+          material.uniforms.uSeed.value = 1;
+    
+          let blotter = new Blotter(material, {
+            texts: text
+          });
+    
+          let scope = blotter.forText(text);
+          scope.appendTo(innerText);
+          document.addEventListener("mousemove", (e) => {
+            material.uniforms.uVolatility.value = (e.clientX + e.clientY) * 0.00009;
+          });
+    </script> 
+
+    
+  </body>
+</html>

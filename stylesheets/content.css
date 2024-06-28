@@ -19,13 +19,6 @@ body{
   }
 
 @font-face {
-  font-family: "CarlaSansLight";
-  src: url("../fonts/CarlaSansLight.ttf") format("truetype");
-  font-style: Light;
-  font-weight: Light;
-}
-
-@font-face {
     font-family: "BowlbyOne";
     src: url("../fonts/BowlbyOne-Regular.ttf") format("truetype");
     font-style: Light;
@@ -125,15 +118,17 @@ p{
     background-position: 0 -5vw;
 }
 
+a:visited {
+    color:black;
+}
+
+a {
+    color:black;
+}
 
 #main {
     left: 20vw;
     top: 8vw
-}
-
-#shop {
-    left: 73vw;
-    top: 13vw
 }
 
 #place { 
@@ -147,9 +142,10 @@ p{
 }
 
 #posters { 
-    left: 25vw;
-    top: 22vw
+    left: 75vw;
+    top: 10vw
 }
+
 
 header {
     position: absolute;
@@ -263,86 +259,6 @@ header {
     justify-content: end;
 }
 
-/*!
-
-.thirdScreen {
-    display: flex;
-    flex-direction: column;
-    width: 95%;
-    margin: 2vw auto 15vw auto;
-}
-
-.shelf {
-    position: relative;
-    width: 45%;
-}
-
-.shelfRight {
-    margin-left: 8vw;
-    margin-bottom: 30vw;
-}
-
-.shelfLeft {
-    margin-left: 50vw;
-    margin-bottom: 30vw;
-}
-
-.shelfTop {
-    width: 35vw;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.shelfBtn {
-    position: absolute;
-    width: 100%;
-    top: 3vw;
-    left: 0;
-}
-
-.shelfImg {
-    width: 20vw;
-    position: absolute;
-    left: 8.2vw;
-
-    transition: all 0.5s;
-}
-
-.shelfBack {
-    width: 35vw;
-    position: absolute;
-    top: 15vw;
-    left: 0;
-}
-
-.shelfName {
-    font-size: 6vw;
-    letter-spacing: 0.3vw;
-    font-family: "Inter", sans-serif;
-    color: black;
-    perspective-origin: 100% 0;
-    transform: perspective(300px) rotateX(25deg);
-    top: 0;
-    left: 15vw;
-    text-align: center;
-    width: fit-content;
-    margin: 0vw auto 0 auto;
-}
-
-.shelfNameContainer {
-    width: 35vw;
-}
-
-.shelfImg:hover {
-    width: 21vw;
-    margin-top: 5vw;
-    transition: all 0.5s;
-    z-index: 20;
-}
-
-*/
-
 
 footer {
     width: 100%;
@@ -400,8 +316,7 @@ a:visited {
 }
 
 #text {
-    margin-left: 9vw;
-    letter-spacing: -5vw;
+    margin-left: -5vw;
 }
 
 .thirdScreen {
@@ -596,6 +511,15 @@ a:visited {
     width: 20vw;
     display: flex;
     flex-direction: column;
+    background-color: white;
+    color: black;
+    transition: all 0.3s;
+}
+
+input:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    transition: all 0.3s;
 }
 
 .dataYO {
@@ -642,6 +566,7 @@ a:visited {
     font-size: 0.9vw;
     padding: 0.5vw 3vw;
     border: 0.1vw black solid;
+    background-color: white;
 }
 
 .complit:hover {
@@ -669,6 +594,8 @@ footer:hover {
     margin-top: 5vw;
     width: 70%;
     margin: 5vw auto;
+    transition: all 1s;
+    opacity: 0;
 }
 
 .foo {
