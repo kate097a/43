@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <!-- ltr - Текст отображается как обычно — слева направо -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="{ссылка}">
+    <meta property="og:title" content="название">
+    <meta property="og:description" content="текст">
+    <meta property="og:image" content="{картинка}">
+    <title>Шаблон</title>
+      <link href="./stylesheets/style.css" rel="stylesheet" type="text/css"/>
+      <script type="importmap">
+        {
+          "imports": {
+            "three": "https://unpkg.com/three@0.139.0/build/three.module.js",
+            "OrbitControls": "https://unpkg.com/three@0.139.0/examples/jsm/controls/OrbitControls.js",
+            "GLTFLoader": "https://unpkg.com/three@0.139.0/examples/jsm/loaders/GLTFLoader.js",
+            "RectAreaLightUniformsLib": "https://unpkg.com/three@0.139.0/examples/jsm/lights/RectAreaLightUniformsLib.js",
+            "RectAreaLightHelper": "https://unpkg.com/three@0.139.0/examples/jsm/helpers/RectAreaLightHelper.js"
+          }
+        }
+  </script>
+  <script src="java-script.js" type="module" charset="utf-8"></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  </head>
+  <body>
+
+    <div  class="noise"></div>
+    <div class="fixedHelper">
+      <section class="fixedMenu" id="fixedMenu">
+        <div class="back" id="back"></div>
+        <p class="fixedText" id="fixedText"></p>
+        <nav class="navigation">
+          <form action="../index.html">
+            <button class="navBtn" id="main"></button>
+           </form>
+          <button class="navBtn" id="shop"></button>
+          <form action="##">
+            <button class="navBtn" id="shop"></button>
+           </form>
+           <form action="../place/index.html">
+            <button class="navBtn" id="place"></button>
+           </form>
+           <form action="../book/index.html">
+            <button class="navBtn" id="book"></button>
+           </form>
+           <form action="../posters/index.html">
+            <button class="navBtn" id="posters"></button>
+           </form>
+        </nav>
+      </section>
+      <div class="cursorDot" id="cursorDot"></div>
+      
+    </div>
+
+
+      <section class="interface">
+        <h1 class="logo"><span>GLI</span><br>DM</h1>
+        <nav class="menu">
+          <p class="menuTip" id="concertHall">концертный зал</p>
+          <p class="menuTip" id="chill">зона отдыха</p>
+          <p class="menuTip" id="clothes">гардероб</p>
+          <p class="menuTip" id="model">внешний вид</p>
+        </nav>
+      </section>
+      <div class="model block visible"></div>
+
+      <section class="concertHall block">
+        <div class="imgSlider">
+          <img class="imgInSlider" src="./img/hall1.png">
+          <img class="imgInSlider" src="./img/hall2.png">
+          <img class="imgInSlider" src="./img/hall1.png">
+          <img class="imgInSlider" src="./img/hall2.png">
+        </div>
+      </section>
+
+  </body>
+</html>

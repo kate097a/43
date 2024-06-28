@@ -1,0 +1,199 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    cursor: none;
+    
+}
+
+@font-face {
+  font-family: "CarlaSansLight";
+  src: url("../fonts/CarlaSansLight.ttf") format("truetype");
+  font-style: Light;
+  font-weight: Light;
+}
+
+p{
+    font-family: 'CarlaSansLight';
+}
+.cursorDot {
+    width: 3vw;
+    height: 3vw;
+    border-radius: 100%;
+    transition: all 300;
+    z-index: 43434342;
+}
+
+.cursorDot {
+    position:fixed;
+    top: 0;
+    left: 0;
+    transform: translate( -50%, -50%);
+    pointer-events: none;
+}
+
+
+.back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    opacity: 0;
+    transition: all 0.7s;
+}
+
+
+.fixedMenu {
+    transition: all 1s;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 43434343;
+    pointer-events: none;
+}
+
+.fixedText {
+    position: absolute;
+    top: 43%;
+    width: 100%;
+    font-size: 2vw;
+    text-align: center;
+    z-index: 32222323232;
+    color: rgb(0, 0, 0);
+}
+
+.navBtn {
+    position: absolute;
+    width: 3vw;
+    height: 3vw;
+    transition: all 1s ;
+    z-index: 9999999999999999;
+    background-color: black;
+    pointer-events: all;
+    
+}
+
+.navBtn:hover {
+    transition: all 1s;
+}
+
+
+.hovered {
+    width: 3.5vw;
+    height: 3.5vw;
+    transition: all 1s ;
+}
+
+.back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    opacity: 0;
+    transition: all 0.7s;
+}
+
+.firstScreen {
+    width: 100vw;
+    height: 40vw;
+    background-size: 100% 120%;
+    background-position: 0 -5vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: -5;
+    overflow: hidden;
+}
+
+
+
+#main {
+    left: 20vw;
+    top: 8vw
+}
+
+#shop {
+    left: 73vw;
+    top: 13vw
+}
+
+#place { 
+    left: 80vw;
+    top: 32vw
+}
+
+#book { 
+    left: 15vw;
+    top: 32vw
+}
+
+#posters { 
+    left: 25vw;
+    top: 22vw
+}
+
+
+header {
+    position: absolute;
+    height: 0; width: 100%;
+}
+
+.fixedHelper {
+    position: relative;
+    height: 100vh; 
+    width: 100%;
+}
+
+.bookContainer {
+    width: 90vw;
+    height: 90vh;
+    position: absolute;
+    border: 0.1vw #000000 solid;
+    top: 2vw;
+    left: 5vw;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pages {
+  width:30%;
+  height: 36.5vw;
+  background-size: 100%;
+  position: absolute;
+  left: 21%;
+  top: 2vw;
+  top: 50%;                
+  transform: translate(0, -50%) ;
+}
+
+.book {
+    width: 50vw;
+    height: 34.5vw;
+    background-size: 100%;
+    position: absolute;
+  }
+
+#book1 {
+    background-image: url("../img/book/2.png");
+    opacity: 1;
+  }
+  
+  #book2 {
+    background-image: url("../img/book/3.png");
+  
+    filter: brightness(0.8);
+  }
+  
+  #book3 {
+    background-image: url("../img/book/4.png");
+    filter: brightness(0.6);
+  }
+  
